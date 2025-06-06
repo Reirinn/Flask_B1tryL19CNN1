@@ -10,7 +10,7 @@ from io import BytesIO
 
 app = Flask(__name__)
 
-CORS(app, origins=["https://commneunicate-f4406.web.app"])
+CORS(app, resources={r"/*": {"origins": "https://commneunicate-f4406.web.app"}})
 
 
 
